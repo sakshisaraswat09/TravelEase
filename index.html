@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelEase</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-bar" class="fa-solid fa-bars"></div>
+
+      <a href="#" class="logo"><span>T</span>ravel Ease</a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-solid fa-magnifying-glass" id="search-btn"></i>
+        <i class="fas fa-solid fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar">
+        <input type="search" id="search-bar-id" placeholder="search here" />
+        <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+      </form>
+    </header>
+
+    <div class="login-form">
+      <i class="fa-solid fa-xmark" id="form-close"></i>
+      <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">register now</a></p>
+        <p>don't have an account?<a href="#">register now</a></p>
+      </form>
+    </div>
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Explore. Dream. Discover</h3>
+        <p>From Booking to Bliss - Your Perfect Vacation Starts Now</p>
+        <a href="#" class="btn">discover more</a>
+      </div>
+      <div class="controls">
+        <span class="vid-btn active" data-src="images/vid1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid5.mp4"></span>
+      </div>
+      <div class="video-container">
+        <video
+          src="images/vid1.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+
+    <!-- booking section -->
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/book.jpg" alt="" />
+        </div>
+        <form actions="">
+          <div class="inputBox">
+            <h3>where to</h3>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputBox">
+            <h3>how many</h3>
+            <input type="number" placeholder="number of guests" />
+          </div>
+          <div class="inputBox">
+            <h3>arrivals</h3>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h3>leaving</h3>
+            <input type="date" />
+          </div>
+          <input type="submit" class="btn" value="book now" />
+        </form>
+      </div>
+    </section>
+
+    <!-- package section -->
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/p-1.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> sydney</i></h3>
+            <p>
+              Experience the stunning beauty of Sydney with our exclusive
+              package. Explore the iconic landmarks and enjoy a luxurious stay.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-2.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> mumbai</i></h3>
+            <p>
+              Discover the vibrant culture and delicious cuisine of Mumbai with
+              our fantastic package. Unforgettable experiences await you.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-3.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> paris</i></h3>
+            <p>
+              Experience the romance of Paris with our enchanting package. Visit
+              world-famous landmarks and indulge in gourmet cuisine.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-4.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> hawaii</i></h3>
+            <p>
+              Escape to the paradise of Hawaii with our tropical package. Relax
+              on pristine beaches and immerse yourself in island culture.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-5.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> delhi</i></h3>
+            <p>
+              Immerse yourself in the rich history and vibrant culture of Delhi
+              with our comprehensive package. Explore ancient monuments and
+              savor local delicacies.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-6.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> tokyo</i></h3>
+            <p>
+              Experience the modern and traditional blend of Tokyo with our
+              exciting package. From high-tech attractions to serene temples,
+              Tokyo has it all.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-7.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> new york</i></h3>
+            <p>
+              Explore the vibrant streets of New York City with our exciting
+              package. From Broadway shows to iconic landmarks, New York awaits
+              your visit.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-8.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> jaipur</i></h3>
+            <p>
+              Experience the royal heritage of Jaipur with our regal package.
+              Explore magnificent palaces and vibrant bazaars in the Pink City.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-9.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"> Las Vegas</i></h3>
+            <p>
+              Experience the excitement of Las Vegas with our
+              entertainment-packed package. From casinos to world-class shows,
+              Las Vegas has it all.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>affordable hotels</h3>
+          <p>
+            Enjoy your stay with our selection of affordable hotels. We offer
+            comfortable accommodations at great prices.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>foods and drinks</h3>
+          <p>
+            Savor delicious cuisine and beverages during your trip. Explore a
+            variety of culinary delights with us.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>safety guide</h3>
+          <p>
+            Travel with confidence using our comprehensive safety guide. Your
+            well-being is our top priority.!
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-globe-asia"></i>
+          <h3>around the world</h3>
+          <p>
+            Discover amazing destinations around the world. We offer travel
+            experiences that will broaden your horizons.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-plane"></i>
+          <h3>fastest travel</h3>
+          <p>
+            Experience fast and efficient travel services. We make your journey
+            smooth and hassle-free.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-hiking"></i>
+          <h3>adventures</h3>
+          <p>
+            Embark on thrilling adventures with us. Explore the great outdoors
+            and create lasting memories.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section -->
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/g-1.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Immerse yourself in the bustling energy of New York City. Explore Times Square, take in stunning skyline views, and indulge in diverse culinary delights.
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-2.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Discover the enchanting streets and iconic landmarks of Paris. Walk along the Seine River, visit world-famous museums, and savor delicious French cuisine.
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-3.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Unwind in the tropical paradise of Hawaii. Enjoy pristine beaches, lush jungles, and a vibrant local culture. Experience ultimate relaxation and adventure.
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="images/g-5.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Embark on a magical journey through the Swiss Alps by train. Witness the breathtaking snowy landscapes, majestic mountains, and charming alpine villages. Indulge in winter sports, sip on hot chocolate by the fire, and create unforgettable memories in a winter wonderland.
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-6.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Dive into the rich culture and futuristic cityscapes of Tokyo. Explore ancient temples, indulge in sushi, and experience the blend of tradition and modernity.
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-7.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Step into the cradle of Western civilization. Visit historic sites like the Acropolis, stroll through charming neighborhoods, and savor Greek cuisine.
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-8.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Experience the stunning beauty of Sydney with our exclusive package. Explore the iconic landmarks and enjoy a luxurious stay by the harbor.
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-9.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Embark on thrilling adventures in the breathtaking landscapes of Patagonia. Hike through glaciers, witness stunning fjords, and connect with nature.
+        </p>
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-10.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Relax on pristine beaches, indulge in water sports, and stay in overwater bungalows in the picturesque Maldives. Paradise awaits you.
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section -->
+
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+      </h1>
+
+      <div class="swiper-cotainer review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic1.jpg" alt="" />
+              <h3>John Smith- New York</h3>
+              <span>Destination: Paris</span>
+              <p>
+                Travel Ease truly lives up to its name! My recent trip to Paris was a seamless, hassle-free experience thanks to their meticulous planning. From exploring the Eiffel Tower to savoring croissants at charming cafes, every moment was unforgettable. I can't wait to book my next adventure with Travel Ease!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic3.jpg" alt="" />
+              <h3>Emily Johnson</h3>
+              <span> Destination: New York</span>
+              <p>
+               
+                Traveling to the Big Apple with Travel Ease was a dream come true. The city that never sleeps came alive for me. Broadway shows, Central Park strolls, and skyline views from the Empire State Building - it was all perfect. Thanks, Travel Ease, for making my NYC trip incredible!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic4.jpg" alt="" />
+              <h3>Ava Patel</h3>
+              <span> Destination: Mumbai</span>
+              <p>
+                Travel Ease made my Mumbai trip incredible. Exploring Bollywood, indulging in street food, and taking in the stunning Marine Drive at sunset - it was all unforgettable. Their attention to detail and local expertise made all the difference.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic5.jpg" alt="" />
+              <h3>Sophia Rodriguez</h3>
+              <span> Destination: Tokyo</span>
+              <p>
+                Tokyo exceeded my expectations, and Travel Ease made sure I experienced it to the fullest. From the bustling streets of Shibuya to serene temples in Asakusa, I got a taste of both modern and traditional Japan. Travel Ease is my go-to for unforgettable journeys!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/pic6.jpg" alt="" />
+              <h3>Olivia White</h3>
+              <span>Destination: Sydney</span>
+              <p>
+                Sydney stole my heart, and Travel Ease made it all possible. From the iconic Sydney Opera House to the beautiful Bondi Beach, I fell in love with the city's charm. Travel Ease ensured I experienced Sydney's magic to the fullest. Can't wait for my next adventure!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/contact-img.jpg" alt="" />
+        </div>
+
+        <form actions="">
+          <div class="inputBox">
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="number" />
+            <input type="text" placeholder="subect" />
+          </div>
+          <textarea
+            placeholder="message"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" class="btn" value="send message" />
+        </form>
+      </div>
+    </section>
+
+    <!-- brand section -->
+    <section class="brand-container">
+      <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+        
+          <div class="swiper-slide"><img src="images/1.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/2.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/3.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/4.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/5.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/6.png" alt=""></div>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <section class="footer">
+
+      <div class="box-container">
+
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Welcome to Travel Ease, your gateway to unforgettable adventures around the world. We're passionate about travel and dedicated to helping you explore the most incredible destinations, create lasting memories, and embark on journeys of a lifetime.
+          </p>
+
+        </div>
+        <div class="box">
+          <h3>branch locations</h3>
+          <a href="#">india</a>
+          <a href="#">France</a>
+          <a href="#">USA</a>
+          <a href="#">Japan</a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">book</a>
+          <a href="#">packages</a>
+          <a href="#">services</a>
+          <a href="#">gallery</a>
+          <a href="#">review</a>
+          <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
